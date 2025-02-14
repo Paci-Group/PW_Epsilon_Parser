@@ -4,13 +4,9 @@ The code calculate_eps.py computes the clamped- and relaxed-ion permittivity of 
 from calculations using the QuantumEspresso PW module. In order to work, three output files
 are necessary:
 
-1. <prefix>.scf.out - A zero field calculation with Berry Phase calculated:
-       ```lelfield        = .true.
-       nberrycyc       = 1
-       lberry          = .true.
-       gdir            = 3```
-2. <prefix>.efield.out - A finite field clamped-ion calculation.
-3. <prefix>.relax.out - A finite field relaxed-ion calculation.
+1. <prefix>.scf.out - A zero field calculation with Berry Phase calculated: `lelfield = .true., lberry = .true.`.
+3. <prefix>.efield.out - A finite field clamped-ion calculation.
+4. <prefix>.relax.out - A finite field relaxed-ion calculation.
 
 ## Output
 The script will calculate the permittivity and Born effective charges and give the output some format.
